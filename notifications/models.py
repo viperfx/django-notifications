@@ -19,7 +19,8 @@ from .utils import id2slug
 from .signals import notify
 
 from model_utils import Choices
-from jsonfield.fields import JSONField
+
+from django.contrib.postgres.fields import JSONField
 
 from django.contrib.auth.models import Group
 
@@ -235,6 +236,7 @@ class Notification(models.Model):
         if not self.unread:
             self.unread = True
             self.save()
+
 
 # 'NOTIFY_USE_JSONFIELD' is for backward compatibility
 # As app name is 'notifications', let's use 'NOTIFICATIONS' consistently from now

@@ -22,15 +22,13 @@ setup(
     author_email='yang@yangyubo.com',
     url='http://github.com/django-notifications/django-notifications',
     install_requires=[
-        'django>=1.7',
+        'django>=1.9',
         'django-model-utils>=2.0.3',
-        'jsonfield>=1.0.3',
         'pytz'
     ],
     test_requires=[
-        'django>=1.7',
+        'django>=1.9',
         'django-model-utils>=2.0.3',
-        'jsonfield>=1.0.3',
         'pytz'
     ],
     packages=[
@@ -48,11 +46,11 @@ setup(
         'Intended Audience :: Developers',
         'License :: OSI Approved :: BSD License',
         'Operating System :: OS Independent',
-	'Framework :: Django',
-	'Framework :: Django :: 1.10',
-	'Framework :: Django :: 1.9',
-	'Framework :: Django :: 1.8',
-	'Framework :: Django :: 1.7',
+        'Framework :: Django',
+        'Framework :: Django :: 1.10',
+        'Framework :: Django :: 1.9',
+        'Framework :: Django :: 1.8',
+        'Framework :: Django :: 1.7',
         # Specify the Python versions you support here. In particular, ensure
         # that you indicate whether you support Python 2, Python 3 or both.
         'Programming Language :: Python',
